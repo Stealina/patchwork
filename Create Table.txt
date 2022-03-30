@@ -1,0 +1,27 @@
+CREATE TABLE IF NOT EXISTS SDS011
+(
+ID int PRIMARY key,
+sensorID int,
+location int,
+lot decimal(10,2),
+p1 decimal(10,2),
+durP1 decimal,
+ratioP1 decimal,
+p2 decimal(10,2),
+durP2 decimal,
+ratioP2 decimal,
+zeitpunkt datetime
+);
+
+
+Create table if not exists DHT22
+(
+id Int PRIMARY Key,
+sensor_id Int,
+location Int,
+lon decimal(10,2),
+lat decimal(10,2),
+humidity decimal(10,2),
+temperature decimal(10,2),
+zeitpunkt datetime
+);
